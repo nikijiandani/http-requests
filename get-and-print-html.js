@@ -24,6 +24,7 @@ function getAndPrintHTML () {
       });
       // the callback is invoked when all of the data has been received
       setTimeout(() => console.log(myData), 5000);
+      
       // (the `end` of the stream)
       response.on('end', function() {
         console.log('Response stream complete.');
